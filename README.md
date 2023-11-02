@@ -1,6 +1,6 @@
 # Rust Book Practices
 
-A collection of practice done according to The Rust Programming Language book.
+A collection of practice done according to The Rust Programming Language book by Steve Klabnik and Carol Nichols.
 
 ## Hello Cargo
 
