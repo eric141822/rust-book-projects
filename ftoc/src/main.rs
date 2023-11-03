@@ -57,12 +57,10 @@ fn main() {
     }
 }
 
-/* f borrowed and dropped at the end. */
 fn farenheit_to_celsius(f: f64) -> f64 {
     (f - 32.0) * 5.0 / 9.0
 }
 
-/* c borrowed and dropped at the end. */
 fn celcius_to_farenheit(c: f64) -> f64 {
     c * 9.0 / 5.0 + 32.0
 }
