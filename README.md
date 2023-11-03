@@ -21,3 +21,7 @@ Calculates the N-th fibonacci number in both a recursive way or a iterative way.
 ## Christmas Carol
 
 Prints the lyrics to [The Twelve Days of Christmas](https://genius.com/Christmas-songs-the-twelve-days-of-christmas-lyrics).
+
+## Rectangle
+
+An introduction on structs (with Rectangle) in Rust. `fmt::Display` for Rectangle is implemented instead of using the `#[derive(Debug)]` trait and `dbg!()`.
