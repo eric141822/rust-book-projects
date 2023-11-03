@@ -36,7 +36,7 @@ fn main() {
                 println!(
                     "{} Farenheit is {} Celsius",
                     farenheit,
-                    farenheit_to_celsius(farenheit as f64)
+                    farenheit_to_celsius(farenheit)
                 );
             }
             Choice::CelsiusToFarenheit => {
@@ -49,7 +49,7 @@ fn main() {
                 println!(
                     "{} Celsius is {} Farenheit",
                     celsius,
-                    celcius_to_farenheit(celsius as f64)
+                    celcius_to_farenheit(celsius)
                 );
             }
             Choice::Exit => break,
@@ -57,10 +57,12 @@ fn main() {
     }
 }
 
+/* f borrowed and dropped at the end. */
 fn farenheit_to_celsius(f: f64) -> f64 {
     (f - 32.0) * 5.0 / 9.0
 }
 
+/* c borrowed and dropped at the end. */
 fn celcius_to_farenheit(c: f64) -> f64 {
     c * 9.0 / 5.0 + 32.0
 }
