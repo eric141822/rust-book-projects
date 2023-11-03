@@ -1,4 +1,9 @@
 use std::io;
+enum Choice {
+    FarenheitToCelsius,
+    CelsiusToFarenheit,
+    Exit,
+}
 fn main() {
     println!("Do you want to convert: ");
     println!("1. Farenheit to Celsius");
@@ -11,15 +16,17 @@ fn main() {
             .read_line(&mut choice)
             .expect("Failed to read line");
 
-        let choice: u32 = match choice.trim().parse() {
-            Ok(num) => num,
-            Err(_) => {
-                println!("Please enter a valid choice.");
+        let choice: Choice = match choice.trim() {
+            "1" => Choice::FarenheitToCelsius,
+            "2" => Choice::CelsiusToFarenheit,
+            "3" => Choice::Exit,
+            _ => {
+                println!("Please enter a valid choice");
                 continue;
             }
         };
         match choice {
-            1 => {
+            Choice::FarenheitToCelsius => {
                 let mut farenheit: String = String::new();
                 println!("Enter the temperature in Farenheit: ");
                 io::stdin()
@@ -32,7 +39,7 @@ fn main() {
                     farenheit_to_celsius(farenheit as f64)
                 );
             }
-            2 => {
+            Choice::CelsiusToFarenheit => {
                 let mut celsius: String = String::new();
                 println!("Enter the temperature in Celsius: ");
                 io::stdin()
@@ -45,11 +52,7 @@ fn main() {
                     celcius_to_farenheit(celsius as f64)
                 );
             }
-            3 => break,
-            _ => {
-                println!("Please enter a valid choice");
-                continue;
-            }
+            Choice::Exit => break,
         }
     }
 }
