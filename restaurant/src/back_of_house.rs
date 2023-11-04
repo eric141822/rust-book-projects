@@ -1,4 +1,3 @@
-#[derive(Debug)]
 pub struct Breakfast {
     pub toast: String,
     seasonal_fruit: String,
@@ -15,5 +14,8 @@ impl Breakfast {
             toast: String::from(toast),
             seasonal_fruit: String::from("peaches"),
         }
+    }
+    pub fn get_seasonal_fruit(&self) -> &str {
+        &self.seasonal_fruit
     }
 }
