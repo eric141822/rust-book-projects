@@ -25,3 +25,7 @@ Prints the lyrics to [The Twelve Days of Christmas](https://genius.com/Christmas
 ## Rectangle
 
 An introduction on structs (with Rectangle) in Rust. `fmt::Display` for Rectangle is implemented instead of using the `#[derive(Debug)]` trait and `dbg!()`.
+
+## Restaurant
+
+From Chapter 7, a module to emulate a restaurant. An introduction to syntax and structures related to rust modules, such as paths, `pub`, `use`, etc.
