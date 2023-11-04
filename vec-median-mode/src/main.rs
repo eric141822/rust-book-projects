@@ -4,6 +4,7 @@ fn main() {
     let v = vec![1, 2, 3, 4, 5];
     let mut d = HashMap::new();
     for n in &v {
+        // deref the n: &i32 with *n.
         let count = d.entry(*n).or_insert(0);
         *count += 1;
     }
