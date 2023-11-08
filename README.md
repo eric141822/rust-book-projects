@@ -55,3 +55,13 @@ Converts a string input into [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin
 Input employees by department in the format _Add \<Employee\> to \<Department\>_.
 
 Lets user retrieve a list of all people in a department or all people in the company by department, sorted alphabetically.
+
+## Chapter 9 Error Handling
+
+### Common Error Handling Patterns
+
+A collection of common error handling patterns in Rust.
+
+### Guessing Game with Error Handling
+
+Guess a secret number ranging from 1 to 100. Now with error handling!
