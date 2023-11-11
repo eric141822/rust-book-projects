@@ -21,9 +21,9 @@ fn main() {
     // }
 }
 
-fn get_median(v: &Vec<i32>) -> i32 {
-    let mut v = v.clone();
-    v.sort();
+fn get_median(v: &[i32]) -> i32 {
+    let mut v = v.to_vec();
+    v.sort_unstable(); // order of equal elements is not guaranteed, but doesn't matter.
     if v.len() % 2 == 0 {
         return (v[v.len() / 2] + v[v.len() / 2 - 1]) / 2;
     }
