@@ -65,3 +65,17 @@ A collection of common error handling patterns in Rust.
 ### Guessing Game with Error Handling
 
 Guess a secret number ranging from 1 to 100. Now with error handling!
+
+## Chapter 10 Generic Types, Traits and Lifetimes
+
+### Generics
+
+Generic types in Rust.
+
+### Traits
+
+Traits in Rust. Exploring concepts such as `impl`, `trait bounds`, `default implementations`, etc.
+
+### Lifetimes
+
+TODO
