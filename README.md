@@ -78,4 +78,4 @@ Traits in Rust. Exploring concepts such as `impl`, `trait bounds`, `default impl
 
 ### Lifetimes
 
-TODO
+Lifetime concepts in Rust. Exploring concepts such as `lifetime annotations`, `lifetime elision`, etc.
