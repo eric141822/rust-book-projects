@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "vec-median-mode"
+name = "vec_median_mode"
 version = "0.1.0"
