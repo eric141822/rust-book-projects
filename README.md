@@ -79,3 +79,16 @@ Traits in Rust. Exploring concepts such as `impl`, `trait bounds`, `default impl
 ### [Lifetimes](lifetime/)
 
 Lifetime concepts in Rust. Exploring concepts such as `lifetime annotations`, `lifetime elision`, etc.
+
+## Chapter 11 Writing Automated Tests
+
+### [Testing in Rust](automated_tests/)
+
+Testing in Rust. Exploring concepts such as `#[cfg(test)]`, `#[test]`, `#[should_panic]`, `#[should_panic(expected="")]`, `#[ignore]`, the `test` directory etc.
+To run tests, use `cargo test`.
+To run tests consecutively and not in parallel (default) use `cargo test -- --test-threads=1`.
+To run tests with function outputs, use `cargo test -- --show-output`.
+To run only the ignored tests, use `cargo test -- --ignored`.
+To test specific functions, use `cargo test <function_name>`.
+To run specific test crates in the `tests` directory, use `cargo test --test <test_crate_name>`.
+Private functions can be tested in Rust.
