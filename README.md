@@ -92,3 +92,7 @@ To run only the ignored tests, use `cargo test -- --ignored`.
 To test specific functions, use `cargo test <function_name>`.
 To run specific test crates in the `tests` directory, use `cargo test --test <test_crate_name>`.
 Private functions can be tested in Rust.
+
+## Chapter 12 An I/O Project: Building a Command Line Program
+
+A simple grep clone written in Rust. See [minigrep](https://github.com/eric141822/minigrep) for details.
