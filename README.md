@@ -96,3 +96,19 @@ Private functions can be tested in Rust.
 ## Chapter 12 An I/O Project: Building a Command Line Program
 
 A simple grep clone written in Rust. See [minigrep](https://github.com/eric141822/minigrep) for details.
+
+## Chapter 13 Functional Language Features: Iterators and Closures
+
+### [Iterators and Closures](iters_and_closures/)
+
+Exploring concepts such as `iter`, `into_iter`, `map`, `filter`, `collect`, closures in general.
+
+## Chapter 14 More about Cargo and Crates.io
+
+### [Crate IO](crate_io/)
+
+Exploring concepts related to Crate IO and how to publish crates, cmds such as `cargo publish`, `cargo yank`... etc.
+
+### [Workspaces](add/)
+
+Workspaces in Rust, `member`, `package`, `workspace`, `dependencies`... etc.
