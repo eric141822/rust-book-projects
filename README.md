@@ -112,3 +112,15 @@ Exploring concepts related to Crate IO and how to publish crates, cmds such as `
 ### [Workspaces](add/)
 
 Workspaces in Rust, `member`, `package`, `workspace`, `dependencies`... etc.
+
+## Chapter 15 Smart Pointers
+
+### [Smart Pointers](smart_ptrs/)
+
+Smart pointers in Rust.
+
+1. `Box<T>`, `Deref` trait, `Drop` trait
+2. `Rc<T>`, `RefCell<T>`, `Weak<T>`.
+3. Demos on `Rc<T>` and `RefCell<T>`.
+4. Possible Memory Leaks with `Rc<T>` and `RefCell<T>`.
+5. Tree data structure with `Rc<T>` and `RefCell<T>` to demonstrate usage for Weak references.
