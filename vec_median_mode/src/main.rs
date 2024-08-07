@@ -1,24 +1,29 @@
 use std::{vec, collections::HashMap};
 
 fn main() {
-    let v = vec![1, 2, 3, 4, 5];
+    let v = vec![1, 2, 3, 4, 5, 5];
     let mut d = HashMap::new();
     for n in &v {
         // deref the n: &i32 with *n.
         let count = d.entry(*n).or_insert(0);
-        *count += 1;
+        *count += 1; // increase the value of the key n.
     }
 
     println!("Median: {}", get_median(&v));
     println!("Mode: {}", get_mode(&d));
 
-    // for n in &v {
-    //     println!("{}", n);
-    // }
 
-    // for (k, v) in &d {
-    //     println!("{}: {}", k, v);
-    // }
+    print!("vec: ");
+    for n in &v {
+        print!("{} ", n);
+    }
+    println!();
+
+    print!("dict: ");
+    for (k, v) in &d {
+        print!("{}: {}\t", k, v);
+    }
+    println!();
 }
 
 fn get_median(v: &[i32]) -> i32 {
