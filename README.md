@@ -124,3 +124,10 @@ Smart pointers in Rust.
 3. Demos on `Rc<T>` and `RefCell<T>`.
 4. Possible Memory Leaks with `Rc<T>` and `RefCell<T>`.
 5. Tree data structure with `Rc<T>` and `RefCell<T>` to demonstrate usage for Weak references.
+
+## Chapter 16 Fearless Concurrency
+
+### [Concurrency](concurrency/)
+
+Introduction to concurrency in Rust. Basic concepts such as `thread`, `spawn`, `join`, `move`, `Mutex`, `Arc`, `Send`, `Sync`, `channels`, `mpsc`, etc.
+Mutexes in Rust while similar to other languages, are more strict in Rust due to the borrow checker, usually paird with `Arc` (Atomic Reference Count) to share data between threads.
