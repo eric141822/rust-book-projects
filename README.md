@@ -131,3 +131,13 @@ Smart pointers in Rust.
 
 Introduction to concurrency in Rust. Basic concepts such as `thread`, `spawn`, `join`, `move`, `Mutex`, `Arc`, `Send`, `Sync`, `channels`, `mpsc`, etc.
 Mutexes in Rust while similar to other languages, are more strict in Rust due to the borrow checker, usually paird with `Arc` (Atomic Reference Count) to share data between threads.
+
+## Chapter 17 Object Oriented Programming
+
+### [Object Oriented Programming](oop/)
+
+Basics of Object Oriented Programming in Rust.
+
+### [Blog](blog/)
+
+A simple blog implementation in Rust. Shows how to implement OOP concepts in Rust such as using Traits to emulate inheritance, and using `Box<dyn Trait>` to emulate polymorphism.
