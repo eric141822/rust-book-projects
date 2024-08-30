@@ -141,3 +141,9 @@ Basics of Object Oriented Programming in Rust.
 ### [Blog](blog/)
 
 A simple blog implementation in Rust. Shows how to implement OOP concepts in Rust such as using Traits to emulate inheritance, and using `Box<dyn Trait>` to emulate polymorphism.
+
+## Chapter 18 Patterns and Matching
+
+### [Patterns and Matching](patterns/)
+
+Exploring patterns and matching in Rust. Concepts such as `match`, `if let`, `while let`, binding with `@`, `..`, `..=`, `|`, `_`... etc.
