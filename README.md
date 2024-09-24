@@ -147,3 +147,11 @@ A simple blog implementation in Rust. Shows how to implement OOP concepts in Rus
 ### [Patterns and Matching](patterns/)
 
 Exploring patterns and matching in Rust. Concepts such as `match`, `if let`, `while let`, binding with `@`, `..`, `..=`, `|`, `_`... etc.
+
+## Chapter 19 Advanced Features
+
+### [Advanced Features](advanced_features/)
+
+More advanced features provided by Rust, such as unsafe code, advanced typing, macros, etc. Also includes a custom derive macro (or a procedural macro) example in [hello_macro](hello_macro/) and [hello_macro_derive](hello_macro_derive/).
+
+Note that the procedural macro MUST be in a separate crate from the one that uses it. This is a Rust limitation but the creators of the language are hoping to remove this limitation in the future.
