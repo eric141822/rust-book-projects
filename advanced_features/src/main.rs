@@ -1,5 +1,8 @@
 use std::slice;
+
 use advanced_features::*;
+use hello_macro::HelloMacro;
+use hello_macro_derive::HelloMacro;
 // The function below will not compile because it is trying to return two mutable references to the same variable.
 
 /* 
@@ -60,6 +63,19 @@ impl Animal for Dog {
         String::from("puppy")
     }
 }
+
+// Dynamically sized type and the Sized trait
+// ?Sized is a trait bound that allows the function to accept both references to sized and unsized types.
+// this syntax is only allowed for the Sized trait.
+
+/*
+fn generic<T: ?Sized>(t: &T) {
+    // code here
+}
+*/
+#[derive(HelloMacro)]
+struct Pancakes;
+
 fn main() {
     let mut num = 5;
 
@@ -111,4 +127,12 @@ fn main() {
 
     let p: Point = Point { x: 1, y: 0 };
     p.outline_print();
+
+    let answer = do_twice(add_one, 5);
+    println!("The answer is: {}", answer);
+
+    let list_of_numbers = my_vec![1, 2, 3];
+    println!("List of numbers: {:?}", list_of_numbers);
+
+    Pancakes::hello_macro();
 }
